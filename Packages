@@ -1,0 +1,141 @@
+Package: adaptation-miatoll
+Version: 0.0.0+git20211114112450.819afbb.bullseye
+Architecture: all
+Maintainer: Marcel Alexandru Nitan
+Installed-Size: 9
+Depends: lxc-android (>= 1:9), adaptation-hybris-api29-phone, adaptation-miatoll-configs
+Filename: ./adaptation-miatoll_0.0.0+git20211114112450.819afbb.bullseye_all.deb
+Size: 2172
+MD5sum: 1c7469035d78097a2ded18f2caa8de6f
+SHA1: 73cb0823c5defff865d3841d7e6622851ba57ca7
+SHA256: 26fc64ed820674510f1cef9ea18cf73538cac4fb079933c29693831970f223d7
+Section: metapackages
+Priority: optional
+Description: adapatation-miatoll - meta
+ Miatoll api29 adaptation metapackage
+
+Package: adaptation-miatoll-configs
+Source: adaptation-miatoll
+Version: 0.0.0+git20211114112450.819afbb.bullseye
+Architecture: all
+Maintainer: Marcel Alexandru Nitan
+Installed-Size: 159
+Depends: adaptation-miatoll (= 0.0.0+git20211114112450.819afbb.bullseye)
+Filename: ./adaptation-miatoll-configs_0.0.0+git20211114112450.819afbb.bullseye_all.deb
+Size: 9084
+MD5sum: 26f92d196aae2b1d8af131ee7d912ea5
+SHA1: 34d78b1ada1a8a2f54aeccb11af625feb3546bf3
+SHA256: 2ceb7be079f6563e56c9169e847413888c763b92e7776de75a38884aabe456ad
+Section: metapackages
+Priority: optional
+Description: Miatoll's specific adaptation configs
+
+Package: linux-bootimage-4.14-254-xiaomi-miatoll
+Source: linux-android-xiaomi-miatoll
+Version: 0.0.0+git20211114113704.2d3fbdd.bullseye
+Architecture: arm64
+Maintainer: Droidian porters <info@droidian.org>
+Installed-Size: 24001
+Pre-Depends: flash-bootimage (>= 4)
+Depends: linux-image-4.14-254-xiaomi-miatoll (= 0.0.0+git20211114113704.2d3fbdd.bullseye)
+Filename: ./linux-bootimage-4.14-254-xiaomi-miatoll_0.0.0+git20211114113704.2d3fbdd.bullseye_arm64.deb
+Size: 23834204
+MD5sum: 2d8a6568e44407402e8539b888216ebb
+SHA1: f6f47d467b8466edcba9ced1b7297edd570ac659
+SHA256: 7ed02a7e83b687f9f8aa2211351f10cd049bdc47ccb38165450b9edcf9cb8a83
+Section: kernel
+Priority: optional
+Description: Linux kernel for Xiaomi Miatoll - Android Boot Image
+ This package contains the Linux kernel for the Xiaomi Miatoll device.
+ .
+ Note: This package ships an Android Boot Image bundled with Halium's
+ initramfs.
+
+Package: linux-bootimage-xiaomi-miatoll
+Source: linux-android-xiaomi-miatoll
+Version: 0.0.0+git20211114113704.2d3fbdd.bullseye
+Architecture: arm64
+Maintainer: Droidian porters <info@droidian.org>
+Installed-Size: 753
+Depends: linux-bootimage-4.14-254-xiaomi-miatoll (= 0.0.0+git20211114113704.2d3fbdd.bullseye)
+Filename: ./linux-bootimage-xiaomi-miatoll_0.0.0+git20211114113704.2d3fbdd.bullseye_arm64.deb
+Size: 760408
+MD5sum: 71b13de2e6a4d2da719be10908b58bef
+SHA1: d15978e8907dfc6887f0c2e6589de7a4a492574f
+SHA256: 3528c61ce6c9ff4aafdf61c486ad2b314b2b5d56573b75ae40c79b0d05a47b6a
+Section: kernel
+Priority: optional
+Description: Linux kernel for Xiaomi Miatoll - Android Boot Image  (latest)
+ This package depends to the latest kernel bootimage available for the Xiaomi Miatoll.
+
+Package: linux-headers-4.14-254-xiaomi-miatoll
+Source: linux-android-xiaomi-miatoll
+Version: 0.0.0+git20211114113704.2d3fbdd.bullseye
+Architecture: arm64
+Maintainer: Droidian porters <info@droidian.org>
+Installed-Size: 56417
+Depends: linux-image-4.14-254-xiaomi-miatoll (= 0.0.0+git20211114113704.2d3fbdd.bullseye)
+Filename: ./linux-headers-4.14-254-xiaomi-miatoll_0.0.0+git20211114113704.2d3fbdd.bullseye_arm64.deb
+Size: 9326532
+MD5sum: 0295117846a26f6e5d9f4370f5ebe2e6
+SHA1: bc53ee90f282b7d96a028672bb764cd9e470cf3c
+SHA256: 0639de931a8a39d1894514b4a96e2ecda1e55a2144235e07240c2f8a333eff98
+Section: kernel
+Priority: optional
+Description: Linux kernel for Xiaomi Miatoll - Headers
+ This package contains the Linux kernel headers for the Xiaomi Miatoll device.
+
+Package: linux-headers-xiaomi-miatoll
+Source: linux-android-xiaomi-miatoll
+Version: 0.0.0+git20211114113704.2d3fbdd.bullseye
+Architecture: arm64
+Maintainer: Droidian porters <info@droidian.org>
+Installed-Size: 753
+Depends: linux-headers-4.14-254-xiaomi-miatoll (= 0.0.0+git20211114113704.2d3fbdd.bullseye)
+Filename: ./linux-headers-xiaomi-miatoll_0.0.0+git20211114113704.2d3fbdd.bullseye_arm64.deb
+Size: 760396
+MD5sum: c929f05f328af711903382cccc7a80e9
+SHA1: ae6913e71e057a15657b52ed9227fa67370d848f
+SHA256: d2d24f6d2aad3a8a095835f3918c5655e6a6834f4a2bccba8fb45975e7d4a3ea
+Section: kernel
+Priority: optional
+Description: Linux kernel for Xiaomi Miatoll - Headers (latest)
+ This package depends to the latest kernel headers available for the Xiaomi Miatoll.
+
+Package: linux-image-4.14-254-xiaomi-miatoll
+Source: linux-android-xiaomi-miatoll
+Version: 0.0.0+git20211114113704.2d3fbdd.bullseye
+Architecture: arm64
+Maintainer: Droidian porters <info@droidian.org>
+Installed-Size: 22104
+Filename: ./linux-image-4.14-254-xiaomi-miatoll_0.0.0+git20211114113704.2d3fbdd.bullseye_arm64.deb
+Size: 16618696
+MD5sum: 43eab6e0aba808121788d8db153c97a0
+SHA1: ea2c7bc76bf4538a7e7f87d080c8ae2bfd9027b1
+SHA256: 31be12c2d2996de522880c753ad77fd61870d3197159e69bff04de68aba7eca2
+Section: kernel
+Priority: optional
+Description: Linux kernel for Xiaomi Miatoll
+ This package contains the Linux kernel for the Xiaomi Miatoll device.
+ .
+ Note: This package only ships the kernel image and modules, you should probably
+ look at the linux-bootimage-4.14-254-xiaomi-miatoll package for a bootimage suitable
+ for Android boot loaders.
+
+Package: linux-image-xiaomi-miatoll
+Source: linux-android-xiaomi-miatoll
+Version: 0.0.0+git20211114113704.2d3fbdd.bullseye
+Architecture: arm64
+Maintainer: Droidian porters <info@droidian.org>
+Installed-Size: 753
+Depends: linux-image-4.14-254-xiaomi-miatoll (= 0.0.0+git20211114113704.2d3fbdd.bullseye)
+Filename: ./linux-image-xiaomi-miatoll_0.0.0+git20211114113704.2d3fbdd.bullseye_arm64.deb
+Size: 760392
+MD5sum: e760cc2eeacdd11624c2a73fa52e82fc
+SHA1: 0139b3c0109670042635ef0b3215e6f028f8ba2a
+SHA256: 27ca9b225eec77dad74676884a641808e88095bd40476968468c76f85f3c9d61
+Section: kernel
+Priority: optional
+Description: Linux kernel for Xiaomi Miatoll (latest)
+ This package depends to the latest kernel image available for the Xiaomi Miatoll.
+
